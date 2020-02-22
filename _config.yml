@@ -2,5 +2,5 @@ name: Daniel-Ko-site
 description: Personal site -- thoughts and projects
 url: "https://daniel-ko.github.io/"
 exclude: [README.md, .gitignore, Gemfile, Gemfile.lock, LICENSE]
-theme: jekyll-theme-tactile
+theme: amitmerchant1990/reverie
 
