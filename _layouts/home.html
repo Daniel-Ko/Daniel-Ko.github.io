@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <title>
+      {% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{
+      site.description }}
+    </title>
+    {% seo title=false %} {% include meta.html %}
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ site.baseurl }}/assets/home_style.css"
+    />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="{{ site.name }} - {{ site.description }}"
+      href="{{ site.baseurl }}/feed.xml"
+    />
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+
+    <meta name="theme-color" content="#000000" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="{{ site.baseurl }}/images/favicon-32x32.png"
+    />
+  </head>
+
+  <body>
+    <div id="bar"></div>
+    <div class="wrapper-container">
+      <div class="wrapper-masthead">
+        <div class="container">
+          <header class="masthead clearfix"></header>
+        </div>
+      </div>
+    </div>
+    <div class="grid">
+      <div class="paths">
+        <p style="font-weight: 700;">Site</p>
+      </div>
+      <div>
+        <p>
+          <span class="sp1">[</span><a href={{ site.baseurl }}/about/>about</a
+          ><span class="sp1">]</span> 
+          <span class="sp2">[</span
+          ><a href={{ site.baseurl }}/posts/>posts</a 
+          ><span class="sp2"">]</span>
+          <span class = "sp3">[</span
+          ><a href={{ site.baseurl }}{% link _pages/categories.md %}>categories</a
+          ><span class="sp3">]</span>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
